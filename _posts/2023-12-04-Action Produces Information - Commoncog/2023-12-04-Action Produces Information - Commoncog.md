@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Action Produces Information"
-date:   2023-11-29 01:55:48 +0800
+date:   2023-12-04 01:24:48 +0800
 categories: jekyll update
 ---
 # Action Produces Information
