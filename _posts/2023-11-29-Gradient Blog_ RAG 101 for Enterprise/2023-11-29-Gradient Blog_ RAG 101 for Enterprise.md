@@ -8,7 +8,7 @@ categories: jekyll update
 
 Increasingly more business are leveraging AI to augment their organizations and large language models (LLMs) are behind what's powering these incredible opportunities. However the process of optimizing LLMs with methods like retrieval augmented generation (RAG) can be complex, which is why we'll be walking you through everything you should consider before you get started.
 
-![](https://framerusercontent.com/images/vXZWRfc2wAIAUKEyaegkHXbRGNc.png)
+![](images/vXZWRfc2wAIAUKEyaegkHXbRGNc.png)
 
 ## Optimizing LLMs
 
@@ -18,7 +18,7 @@ Before we dive into the topic of retrieval augmented generation (RAG), lets take
 
 * **Open Source LLMs:** Language models whose source code and model weights are publicly available and can be freely accessed, used, modified, and distributed by anyone. (e.g. Llama2, Starcoder, etc.)
 
-![](https://framerusercontent.com/images/23nmDBk6lbSYKiJv2Ul9fllyo.webp)
+![](images/23nmDBk6lbSYKiJv2Ul9fllyo.webp)
 
 While most LLMs will come pre-trained and will have already absorbed an extensive amount of data to enable it to understand general language and context, it doesn't necessarily mean it will be able to complete the task that you want it to. Which is why LLMs generally need to be further optimized, in order to ensure that your LLMs are capable of executing against specific tasks. Some notable optimization methods include prompt engineering, RAG, and fine-tuning - each contributing a different set of values for improving your model. As a business, you'll need to think through your goals and choose the optimization method that best suits your needs. However today, we'll be primarily focusing on RAG and we'll walk you through some of the things that you should consider if you're considering this approach. If you're interested in learning more about other optimization methods, you can check out our recent breakdown of [Fine-Tuning 101 for Enterprise](https://gradient.ai/blog/fine-tuning-101-for-enterprise).
 
@@ -66,7 +66,7 @@ As you're thinking through your use case(s), keep in mind that you may end up ha
 
 With prompting, you're simply designing and refining the input that you're providing the model and influencing the kind of output that you want to see. This method is quick, affordable, and doesn't involve a large amount of computing power which is why this is often time the first optimization method that you might want to consider. However what you'll quickly notice is that it may fall short in terms of accuracy and versatility, especially if your use case requires additional context. Therefore if your business use case is a bit more complex and domain specific, you're left with a very common dilemma between whether you should use RAG or fine-tuning. At Gradient, we believe the answer isn't one or the other, but rather it's a combination of all these methods.
 
-![](https://framerusercontent.com/images/8GU4HjmirbKOqJBPrzWL23TxxOA.png)
+![](images/8GU4HjmirbKOqJBPrzWL23TxxOA.png)
 
 Combining RAG and fine-tuning significantly enhances the performance and reliability of your LLM. RAG enables your LLM with the ability to access an external knowledge base, providing your model with enough context to elicit the capability that it was trained to do - a concept known as in-context learning. However the downside here is that if a pre-trained LLM is struggling with document summarization (e.g. medical documentation, financial report, etc.), it's unlikely that adding additional documents to your model in an effort to provide more context will resolve the issue. In this case fine-tuning is better suited to achieve your desired outcome, which is why fine-tuning represents the process of training your model to acquire the necessary skills to perform the task. While there may be a chance that the intended task could be accomplished by using only one of these methods, LLMs perform exponentially better when it has the right context and the necessary skill to tie together the best possible response for the completion.
 
@@ -80,7 +80,7 @@ The process for RAG combines information retrieval with text generation.
 
 To accurately pull the right context from a vector database to implement RAG, an [embeddings model](https://gradient.ai/blog/introducing-the-gradient-embeddings-api) is used to generate vectors. Embeddings are numerical representations of natural language concepts. A word, phrase or even document is converted into a vector of real numbers, which will often have hundreds or thousands of dimensions of relevance.
 
-![](https://framerusercontent.com/images/ucYfyIhoSJ20QEv6yiSjqjXOc0.png)
+![](images/ucYfyIhoSJ20QEv6yiSjqjXOc0.png)
 
 If two concepts are similar, they will also be numerically similar. For example, an embeddings model may not understand that "cat" and "dog" are both pets, but it can determine that they have high semantic similarity and classify them together with other animals that are common pets. This concept is important to understand, since one of the primary components for RAG is the ability to interpret the query with enough context to accurately pull relevant information from a vector database and surface the answer that you're looking for. Now that you have a basic level understand of embeddings, lets breakdown the process for RAG.
 
@@ -94,13 +94,13 @@ If two concepts are similar, they will also be numerically similar. For example,
 
   5. **Step 5 - Text Generation:** In order to produce an output or response, the prompt which includes the linked query and retrieved documents has to be inputed into the LLM.
 
-![](https://framerusercontent.com/images/YSWscOoWJJEgYFgujDvMV77Ehw.png)
+![](images/YSWscOoWJJEgYFgujDvMV77Ehw.png)
 
 ## Ways To Further Optimize RAG Performance
 
 If you're looking to improve the performance and accuracy of your RAG system, here's a few things you can consider.
 
-![](https://framerusercontent.com/images/iuiXaFgussjvYpygQjrhMSDWrPc.png)![](https://framerusercontent.com/images/JUkeWeIBUEpClHwqdB1nu80PSHA.png)
+![](images/JUkeWeIBUEpClHwqdB1nu80PSHA.png)
 
 ## Challenge with Getting Started with RAG
 
@@ -124,7 +124,7 @@ As you've now learned, often times the best way to optimize your LLMs is to use 
 
   2. **Gradient Platform:** Gradient also offers a platform to further train these LLMs using your private data, to supercharge your LLMs to understand the ins and outs your organization. Not only is this combination not offered by any other platform today, but Gradient also enables enterprise businesses with the ability to add additional development methods on top of these models (e.g. Prompt Engineering, Fine-Tuning, RAG, etc.)
 
-![](https://framerusercontent.com/images/QN6kx7QFVnrRAmdOCZo0NnJIZoQ.png)
+![](images/QN6kx7QFVnrRAmdOCZo0NnJIZoQ.png)
 
 With Gradient, our platform is designed to simplify the development process for AI applications by removing complex infrastructure, upfront costs, and enabling your business to scale confidently.
 
@@ -146,10 +146,10 @@ While Gradient provides a platform for you to optimize your models using various
 
 The Gradient Embeddings API helps you generate embeddings with a simple API call. There is no setup required to start generating embeddings on your data. Using the Gradient Embeddings API, you have full control and ownership over your data and generated embeddings. This means you can feel confident using your private data, as no one else can access the embeddings you generate. As we mentioned before, choosing the right embeddings model can severely impact your performance. Gradient uses bge-large-en under the hood, which has consistently ranked as one of the [top leading embeddings model available today](https://huggingface.co/spaces/mteb/leaderboard).
 
-![](https://framerusercontent.com/images/mAOllDLYiKrQlWZfDzDDlsMxR0E.png)
+![](images/mAOllDLYiKrQlWZfDzDDlsMxR0E.png)
 
 ##### **LlamaIndex Integration**
 
 With our [integration with LlamaIndex](https://gradient.ai/blog/introducing-the-llamindex-integration), we are enabling users to effectively implement RAG on top of their private, custom models in the Gradient platform. While the overall process for RAG with LlamaIndex will remain relatively the same from what we've already discussed, what you get in return is something you should definitely consider. Not only will the process become significantly easier, but LlamaIndex allows for far more sophisticated indexing and retrieval of context due to their cutting edge methods that they use to perform RAG.
 
-![](https://framerusercontent.com/images/pXOGCDAYHPsw4PSw6lQnErYxOTE.png)
+![](images/pXOGCDAYHPsw4PSw6lQnErYxOTE.png)
